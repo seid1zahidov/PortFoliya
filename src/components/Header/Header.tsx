@@ -1,4 +1,3 @@
-import React from "react";
 import "../../assets/Header/Header.css";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaAddressCard, FaFolderOpen } from "react-icons/fa";

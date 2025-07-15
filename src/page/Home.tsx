@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../assets/HomePage/Home.css";
 
 function Home() {
@@ -6,12 +6,12 @@ function Home() {
   const textLine2 = "Said Zahidov";
   const textLine3 = "Front-End Developer";
 
-  const [key, setKey] = useState(0); // render üçün trigger
+  const [key, setKey] = useState<number>(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setKey((prevKey) => prevKey + 1);
-    }, 5000); // 5 saniyədən bir yenidən render
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -27,19 +27,27 @@ function Home() {
   );
 }
 
+// Props interfeysi
+interface AnimatedTextProps {
+  text: string;
+  delay?: number;
+  highlight?: boolean;
+  small?: boolean;
+}
+
 const AnimatedText = ({
   text,
   delay = 0,
   highlight = false,
   small = false,
-}) => {
+}: AnimatedTextProps) => {
   return (
     <h1
       className={`animated-text ${highlight ? "highlight" : ""} ${
         small ? "small" : ""
       }`}
     >
-      {text.split("").map((char, idx) => (
+      {text.split("").map((char: string, idx: number) => (
         <span
           key={idx}
           style={{
