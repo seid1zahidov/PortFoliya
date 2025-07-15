@@ -5,8 +5,6 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "noImplicitAny": false,
-    "preserveUnusedImports": false
+    "noImplicitAny": false
   }
 }
-
