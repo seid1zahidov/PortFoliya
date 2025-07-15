@@ -1,0 +1,289 @@
+.error-page {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+.error-page .error-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.error-page .error-heading span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: rise 0.4s ease forwards;
+}
+.error-page .error-heading span:nth-child(1) {
+  color: #ff6e05;
+}
+.error-page .error-heading span:nth-child(2) {
+  color: #ff710a;
+}
+.error-page .error-heading span:nth-child(3) {
+  color: #ff740f;
+}
+.error-page .error-heading span:nth-child(4) {
+  color: #ff7714;
+}
+.error-page .error-heading span:nth-child(5) {
+  color: #ff7a1a;
+}
+.error-page .error-heading span:nth-child(6) {
+  color: #ff7d1f;
+}
+.error-page .error-heading span:nth-child(7) {
+  color: #ff8024;
+}
+.error-page .error-heading span:nth-child(8) {
+  color: #ff8329;
+}
+.error-page .error-heading span:nth-child(9) {
+  color: #ff862e;
+}
+.error-page .error-heading span:nth-child(10) {
+  color: #ff8933;
+}
+.error-page .error-heading span:nth-child(11) {
+  color: #ff8c38;
+}
+.error-page .error-heading span:nth-child(12) {
+  color: #ff8f3d;
+}
+.error-page .error-heading span:nth-child(13) {
+  color: #ff9142;
+}
+.error-page .error-heading span:nth-child(14) {
+  color: #ff9447;
+}
+.error-page .error-heading span:nth-child(15) {
+  color: #ff974d;
+}
+.error-page .error-heading span:nth-child(16) {
+  color: #ff9a52;
+}
+.error-page .error-heading span:nth-child(17) {
+  color: #ff9d57;
+}
+.error-page .error-heading span:nth-child(18) {
+  color: #ffa05c;
+}
+.error-page .error-heading span:nth-child(19) {
+  color: #ffa361;
+}
+.error-page .error-heading span:nth-child(20) {
+  color: #ffa666;
+}
+.error-page .error-heading span:nth-child(21) {
+  color: #ffa96b;
+}
+.error-page .error-heading span:nth-child(22) {
+  color: #ffac70;
+}
+.error-page .error-heading span:nth-child(23) {
+  color: #ffaf75;
+}
+.error-page .error-heading span:nth-child(24) {
+  color: #ffb27a;
+}
+.error-page .error-heading span:nth-child(25) {
+  color: #ffb580;
+}
+.error-page .error-heading span:nth-child(26) {
+  color: #ffb885;
+}
+.error-page .error-heading span:nth-child(27) {
+  color: #ffbb8a;
+}
+.error-page .error-heading span:nth-child(28) {
+  color: #ffbe8f;
+}
+.error-page .error-heading span:nth-child(29) {
+  color: #ffc194;
+}
+.error-page .error-heading span:nth-child(30) {
+  color: #ffc499;
+}
+.error-page .error-heading span:nth-child(31) {
+  color: #ffc79e;
+}
+.error-page .error-heading span:nth-child(32) {
+  color: #ffcaa3;
+}
+.error-page .error-heading span:nth-child(33) {
+  color: #ffcda8;
+}
+.error-page .error-heading span:nth-child(34) {
+  color: #ffd0ad;
+}
+.error-page .error-heading span:nth-child(35) {
+  color: #ffd3b3;
+}
+.error-page .error-heading span:nth-child(36) {
+  color: #ffd6b8;
+}
+.error-page .error-heading span:nth-child(37) {
+  color: #ffd9bd;
+}
+.error-page .error-heading span:nth-child(38) {
+  color: #ffdbc2;
+}
+.error-page .error-heading span:nth-child(39) {
+  color: #ffdec7;
+}
+.error-page .error-heading span:nth-child(40) {
+  color: #ffe1cc;
+}
+.error-page .error-heading span:nth-child(41) {
+  color: #ffe4d1;
+}
+.error-page .error-heading span:nth-child(42) {
+  color: #ffe7d6;
+}
+.error-page .error-heading span:nth-child(43) {
+  color: #ffeadb;
+}
+.error-page .error-heading span:nth-child(44) {
+  color: #ffede0;
+}
+.error-page .error-heading span:nth-child(45) {
+  color: #fff0e6;
+}
+.error-page .error-heading span:nth-child(46) {
+  color: #fff3eb;
+}
+.error-page .error-heading span:nth-child(47) {
+  color: #fff6f0;
+}
+.error-page .error-heading span:nth-child(48) {
+  color: #fff9f5;
+}
+.error-page .error-heading span:nth-child(49) {
+  color: #fffcfa;
+}
+.error-page .error-heading span:nth-child(50) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(51) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(52) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(53) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(54) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(55) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(56) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(57) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(58) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(59) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(60) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(61) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(62) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(63) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(64) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(65) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(66) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(67) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(68) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(69) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(70) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(71) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(72) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(73) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(74) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(75) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(76) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(77) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(78) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(79) {
+  color: white;
+}
+.error-page .error-heading span:nth-child(80) {
+  color: white;
+}
+.error-page p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+.error-page button {
+  background-color: #00ffae;
+  color: #0f0f0f;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.error-page button:hover {
+  background-color: #00e6a0;
+  transform: scale(1.05);
+}
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=error.css.map */

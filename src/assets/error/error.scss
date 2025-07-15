@@ -1,0 +1,60 @@
+.error-page {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+
+  .error-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: rise 0.4s ease forwards;
+    }
+
+    @for $i from 1 through 80 {
+      span:nth-child(#{$i}) {
+        color: lighten(#ff6b00, $i * 1%);
+      }
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 30px;
+  }
+
+  button {
+    background-color: #00ffae;
+    color: #0f0f0f;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+      background-color: #00e6a0;
+      transform: scale(1.05);
+    }
+  }
+}
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

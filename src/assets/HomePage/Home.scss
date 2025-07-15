@@ -1,0 +1,69 @@
+$colors: #ffffff, #b7ffb7, #aaffaa, #66ffcc, #ccffe0, #eaffea;
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(120deg, #a24343, #1b1b1b);
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  .text {
+    text-align: center;
+  }
+
+  .animated-text {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 0.4em 0;
+    display: inline-block;
+
+    &.highlight {
+      font-size: 3.2rem;
+    }
+
+    &.small {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #cccccc;
+    }
+
+    span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: reveal 0.4s ease forwards;
+
+      // hərflərə sakit, yaşıl-ağ rənglər verilir
+      @for $i from 1 through 50 {
+        &:nth-child(#{$i}) {
+          color: nth($colors, (($i - 1) % length($colors)) + 1);
+        }
+      }
+    }
+  }
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Responsive görünüş
+@media (max-width: 768px) {
+  .hero .animated-text {
+    font-size: 2rem;
+
+    &.highlight {
+      font-size: 2.4rem;
+    }
+
+    &.small {
+      font-size: 1.2rem;
+    }
+  }
+}

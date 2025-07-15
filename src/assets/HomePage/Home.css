@@ -1,0 +1,200 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(120deg, #a24343, #1b1b1b);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.hero .text {
+  text-align: center;
+}
+.hero .animated-text {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0.4em 0;
+  display: inline-block;
+}
+.hero .animated-text.highlight {
+  font-size: 3.2rem;
+}
+.hero .animated-text.small {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #cccccc;
+}
+.hero .animated-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: reveal 0.4s ease forwards;
+}
+.hero .animated-text span:nth-child(1) {
+  color: #ffffff;
+}
+.hero .animated-text span:nth-child(2) {
+  color: #b7ffb7;
+}
+.hero .animated-text span:nth-child(3) {
+  color: #aaffaa;
+}
+.hero .animated-text span:nth-child(4) {
+  color: #66ffcc;
+}
+.hero .animated-text span:nth-child(5) {
+  color: #ccffe0;
+}
+.hero .animated-text span:nth-child(6) {
+  color: #eaffea;
+}
+.hero .animated-text span:nth-child(7) {
+  color: #ffffff;
+}
+.hero .animated-text span:nth-child(8) {
+  color: #b7ffb7;
+}
+.hero .animated-text span:nth-child(9) {
+  color: #aaffaa;
+}
+.hero .animated-text span:nth-child(10) {
+  color: #66ffcc;
+}
+.hero .animated-text span:nth-child(11) {
+  color: #ccffe0;
+}
+.hero .animated-text span:nth-child(12) {
+  color: #eaffea;
+}
+.hero .animated-text span:nth-child(13) {
+  color: #ffffff;
+}
+.hero .animated-text span:nth-child(14) {
+  color: #b7ffb7;
+}
+.hero .animated-text span:nth-child(15) {
+  color: #aaffaa;
+}
+.hero .animated-text span:nth-child(16) {
+  color: #66ffcc;
+}
+.hero .animated-text span:nth-child(17) {
+  color: #ccffe0;
+}
+.hero .animated-text span:nth-child(18) {
+  color: #eaffea;
+}
+.hero .animated-text span:nth-child(19) {
+  color: #ffffff;
+}
+.hero .animated-text span:nth-child(20) {
+  color: #b7ffb7;
+}
+.hero .animated-text span:nth-child(21) {
+  color: #aaffaa;
+}
+.hero .animated-text span:nth-child(22) {
+  color: #66ffcc;
+}
+.hero .animated-text span:nth-child(23) {
+  color: #ccffe0;
+}
+.hero .animated-text span:nth-child(24) {
+  color: #eaffea;
+}
+.hero .animated-text span:nth-child(25) {
+  color: #ffffff;
+}
+.hero .animated-text span:nth-child(26) {
+  color: #b7ffb7;
+}
+.hero .animated-text span:nth-child(27) {
+  color: #aaffaa;
+}
+.hero .animated-text span:nth-child(28) {
+  color: #66ffcc;
+}
+.hero .animated-text span:nth-child(29) {
+  color: #ccffe0;
+}
+.hero .animated-text span:nth-child(30) {
+  color: #eaffea;
+}
+.hero .animated-text span:nth-child(31) {
+  color: #ffffff;
+}
+.hero .animated-text span:nth-child(32) {
+  color: #b7ffb7;
+}
+.hero .animated-text span:nth-child(33) {
+  color: #aaffaa;
+}
+.hero .animated-text span:nth-child(34) {
+  color: #66ffcc;
+}
+.hero .animated-text span:nth-child(35) {
+  color: #ccffe0;
+}
+.hero .animated-text span:nth-child(36) {
+  color: #eaffea;
+}
+.hero .animated-text span:nth-child(37) {
+  color: #ffffff;
+}
+.hero .animated-text span:nth-child(38) {
+  color: #b7ffb7;
+}
+.hero .animated-text span:nth-child(39) {
+  color: #aaffaa;
+}
+.hero .animated-text span:nth-child(40) {
+  color: #66ffcc;
+}
+.hero .animated-text span:nth-child(41) {
+  color: #ccffe0;
+}
+.hero .animated-text span:nth-child(42) {
+  color: #eaffea;
+}
+.hero .animated-text span:nth-child(43) {
+  color: #ffffff;
+}
+.hero .animated-text span:nth-child(44) {
+  color: #b7ffb7;
+}
+.hero .animated-text span:nth-child(45) {
+  color: #aaffaa;
+}
+.hero .animated-text span:nth-child(46) {
+  color: #66ffcc;
+}
+.hero .animated-text span:nth-child(47) {
+  color: #ccffe0;
+}
+.hero .animated-text span:nth-child(48) {
+  color: #eaffea;
+}
+.hero .animated-text span:nth-child(49) {
+  color: #ffffff;
+}
+.hero .animated-text span:nth-child(50) {
+  color: #b7ffb7;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .hero .animated-text {
+    font-size: 2rem;
+  }
+  .hero .animated-text.highlight {
+    font-size: 2.4rem;
+  }
+  .hero .animated-text.small {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=Home.css.map */

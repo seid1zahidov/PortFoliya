@@ -1,0 +1,82 @@
+$colors: #ffffff, #aaffaa, #ccffe0, #66ffcc, #b7ffb7, #eaffea;
+
+.about-section {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #a24343, #1b1b1b);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+
+  .content {
+    max-width: 850px;
+    text-align: center;
+  }
+
+  .animated-heading {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: inline-block;
+
+    &.big {
+      font-size: 3.2rem;
+    }
+
+    span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: riseFade 0.4s ease forwards;
+
+      @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+          color: nth($colors, (($i - 1) % length($colors)) + 1);
+        }
+      }
+    }
+  }
+
+  .animated-paragraph {
+    font-size: 1.2rem;
+    color: #cccccc;
+    line-height: 1.8;
+    margin-top: 10px;
+
+    span {
+      display: inline-block;
+      opacity: 0;
+      animation: fadeWord 0.5s ease forwards;
+      transform: translateY(8px);
+    }
+  }
+}
+
+@keyframes riseFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeWord {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px;
+
+    .animated-heading.big {
+      font-size: 2.2rem;
+    }
+
+    .animated-paragraph {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.tight-header {
+  background: linear-gradient(120deg, #a24343, #1b1b1b);
+
+  padding: 18px 0;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.centered-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap; /* mobil üçün bükülmə */
+  padding: 0 10px;
+
+  a {
+    padding: 0 18px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+
+    &:hover {
+      color: #ff6b00;
+    }
+
+    &.active {
+      color: #ff6b00;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #ff6b00;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    font-size: 2rem;
+    color: #ffffff !important;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* ✅ Responsivlik */
+@media (max-width: 768px) {
+  .centered-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    a {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      padding: 6px;
+    }
+  }
+}
